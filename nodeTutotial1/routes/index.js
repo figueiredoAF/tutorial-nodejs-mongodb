@@ -16,7 +16,7 @@ router.get('/userlist', function(req, res){
       return;
     }
     console.log('USERS:', docs);
-    res.render('userList', {"userlist": docs});
+    res.render('userlist', {"userlist": docs});
   });
 
 });
