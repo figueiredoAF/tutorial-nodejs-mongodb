@@ -1,5 +1,6 @@
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/nodeTutorial1');
+mongoose.Promise = global.Promise;
+mongoose.connect('mongodb://localhost:27017/nodeTutorial1', { useMongoClient: true });
 
 var userSchema = new mongoose.Schema(
     {
